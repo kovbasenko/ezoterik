@@ -1,0 +1,57 @@
+.header {
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  height: 60px;
+  // border: 1px solid red;
+  color: #fff;
+}
+
+.logo {
+  width: 35px;
+  height: 35px;
+
+  @media (min-width: 768px ) and (max-width: 1278px) {
+    align-self: center;
+  }
+  
+  @media (max-width: 767px) {
+    margin-top: 20px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+.headerContainer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navigation {
+  line-height: 44px;
+}
+
+.navigationList {
+  display: flex;
+  justify-content: space-between;
+}
+
+.navitagionListItem {
+  &:hover {
+    cursor: pointer;
+    opacity: 0.7;
+  }
+
+
+  &:not(:last-child) {
+    margin-right: 24px;
+  }
+}
+
+.navigationLink {
+  color: #fff;
+}

@@ -1,0 +1,35 @@
+.main {
+  position: relative;
+  background-image: url("./img/mainPhoto.jpg") ;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+}
+
+.mainContainer {
+  padding-top: 25vh;
+  
+  @media (max-width: 767px) {
+    padding-top: 33vh;
+  }
+}
+
+.title {
+  display: block;
+  margin-bottom: 60px;
+  text-align: center;
+  font-size: 80px;
+  color: #fff;
+  
+  @media (max-width: 767px) {
+    font-size: 37px;
+    margin-bottom: 36px;
+  }
+}
+
+.description {
+  display: block;
+  text-align: center;
+  font-size: 30px;
+  color: #fff;
+}

@@ -1,0 +1,112 @@
+.description {
+  height: 600px;
+  padding: 60px 0;
+  background-color: #fff;
+
+  @media (max-width: 767px) {
+    padding: 28px 0;
+  }
+}
+
+.descriptionContainer {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.imageContainer {
+  width: 100%;
+  display: flex;
+  margin-bottom: 30px;
+  justify-content: space-between;
+  
+  @media (max-width: 767px) {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+  }
+}
+
+.image {
+  width: 220px;
+  border-radius: 48px;
+  box-shadow: 14px 14px 19px -6px rgba(0, 0, 0, 0.4);
+  
+  @media (max-width: 767px) {
+    width: 85px;
+  }
+  
+  @media (min-width: 768px ) and (max-width: 1278px) {
+    width: 128px;
+  }
+}
+
+.descriptionBlock {
+  text-align: center;
+  width: 100%;
+}
+
+.title {
+  margin-bottom: 40px;
+  font-size: 30px;
+  
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+}
+
+.descriptionListContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.list {
+  width: 48%;
+  text-align: left;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+
+  @media (max-width: 767px) {
+    width: 44%;
+  }
+}
+
+.listItem {
+  position: relative;
+  font-size: 18px;
+  
+  @media (max-width: 767px) {
+    font-size: 13px;
+  }
+  
+  &:not(:last-child) {
+    margin-bottom: 10px;
+  }
+  
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 18px;
+    height: 18px;
+    left: -24px;
+    background-image: url(./img/pentacle.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+  } 
+}
+
+.descriptionText {
+  font-size: 26px;
+  margin-top: 30px;
+  font-size: 24px;
+
+  @media (max-width: 767px) {
+    margin-top: 20px;
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,89 @@
+.purposes {
+  height: 600px;
+  background-color: #f6f6f6;
+}
+
+.purposesContainer {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+
+  @media (max-width: 767px) {
+    flex-direction: column;
+    padding: 20px 0;
+  }
+}
+
+.imageContainer {
+  height: 400px;
+  margin-right: 100px;
+  
+  @media (max-width: 767px) {
+    height: 226px;
+    margin-right: 0;
+  }
+
+  @media (min-width: 768px ) and (max-width: 1278px) {
+    height: 232px;
+  }
+}
+
+.image {
+  height: 100%;
+  border-radius: 30px;
+  box-shadow: 19px 19px 16px -6px rgba(0,0,0,0.42);
+}
+
+.descContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.title {
+  margin-bottom: 30px;
+  font-size: 40px;
+  
+  @media (max-width: 767px) {
+    margin-bottom: 20px;
+    font-size: 30px;
+  }
+}
+
+.listItem {
+  position: relative;
+  font-size: 21px;
+  
+  @media (max-width: 767px) {
+    font-size: 18px;
+  }
+  
+  &:not(:last-child) {
+    margin-bottom: 16px;
+
+    @media (max-width: 767px) {
+      margin-bottom: 12px;
+    }
+  }
+
+  &::before {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    left: -31px;
+    top: 2px;
+    background-image: url(./img/pentacle.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+
+    @media (max-width: 767px) {
+      width: 18px;
+      height: 18px;
+      left: -26px;
+      top: 0px;
+    }
+  } 
+}
